@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DisplayVideoCell" customModule="TictokLoader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="541"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="541"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbr-kT-oOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="541"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayo-oM-fhc">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="541"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="pauseAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="d5b-LD-nsg"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="tbr-kT-oOJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MSP-mj-Icd"/>
+                <constraint firstAttribute="bottom" secondItem="tbr-kT-oOJ" secondAttribute="bottom" id="TAM-CH-Ddz"/>
+                <constraint firstAttribute="trailing" secondItem="tbr-kT-oOJ" secondAttribute="trailing" id="lFc-R9-gac"/>
+                <constraint firstItem="tbr-kT-oOJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xrx-bG-oJY"/>
+            </constraints>
+            <size key="customSize" width="355" height="541"/>
+            <connections>
+                <outlet property="displaycontent" destination="tbr-kT-oOJ" id="w5v-6S-rbM"/>
+                <outlet property="pauseButton" destination="Ayo-oM-fhc" id="kTO-hS-3E0"/>
+            </connections>
+            <point key="canvasLocation" x="371.53846153846155" y="195.14218009478671"/>
+        </collectionViewCell>
+    </objects>
+</document>
